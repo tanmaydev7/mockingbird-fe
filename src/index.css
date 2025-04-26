@@ -39,6 +39,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* custom theme */
+  --color-mb-1: var(--theme-mb-1);
+  --color-mb-2: var(--theme-mb-2);
+  --color-mb-3: var(--theme-mb-3);
+  --color-mb-4: var(--theme-mb-4);
 }
 
 :root {
@@ -74,6 +80,10 @@
   --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
   --sidebar-border: oklch(0.923 0.003 48.717);
   --sidebar-ring: oklch(0.709 0.01 56.259);
+  --theme-mb-1: #0fc6ca;
+  --theme-mb-2: #4e9d9f;
+  --theme-mb-3: #e4ffff;
+  --theme-mb-4: #e6f4f1;
 }
 
 .dark {
@@ -108,6 +118,10 @@
   --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.553 0.013 58.071);
+  --theme-mb-1: #0fc6ca;
+  --theme-mb-2: #4e9d9f;
+  --theme-mb-3: #e4ffff;
+  --theme-mb-4: #e6f4f1;
 }
 
 @layer base {
@@ -117,4 +131,16 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body , #root {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
 }

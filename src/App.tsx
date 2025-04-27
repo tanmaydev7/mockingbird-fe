@@ -1,11 +1,11 @@
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router";
 import RoutesManager from "@/Routes";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "*",
     element: <RoutesManager/>,

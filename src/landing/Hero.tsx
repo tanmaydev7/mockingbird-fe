@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button"
 import { heroDesc, sampleAPIResponse } from "./constants/constant"
 import { cn } from "@/lib/utils"
 import TiltCard from "@/utility-components/TiltCard"
+import { Link } from "react-router"
+import { RoutesPath } from "@/constants/routes"
 
 type Props = {}
 
@@ -18,7 +20,9 @@ export const Hero = (_props: Props) => {
                 </p>
                 <div className="mt-2">
                     <Button className="rounded-2xl px-8">
-                        Get Started
+                        <Link to={RoutesPath.SIGNUP}>
+                            Get Started
+                        </Link>
                     </Button>
                 </div>
             </div>

@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import { RoutesPath } from "@/constants/routes"
+import { Link } from "react-router"
 type Props = {}
 
 export const TryDemo = (_props: Props) => {
@@ -13,11 +15,15 @@ export const TryDemo = (_props: Props) => {
             </p>
         </div>
         <div className="w-full text-center mt-8 flex gap-4 justify-center">
-            <Button variant={"default"} className="px-8">
-                Get Started
+            <Button variant={"default"} className="px-8" asChild>
+                <Link to={RoutesPath.SIGNUP}>
+                    Get Started
+                </Link>
             </Button>
-            <Button variant={"outline"} className="px-8">
-                Try Demo
+            <Button variant={"outline"} className="px-8" asChild>
+                <Link to={RoutesPath.DEMO}>
+                    Try Demo
+                </Link>
             </Button>
         </div>
     </div>

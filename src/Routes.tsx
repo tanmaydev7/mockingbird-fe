@@ -4,6 +4,7 @@ import Login from "@/pages/Login"
 import SignUp from "@/pages/Signup"
 import LandingLayout from './layouts/LandingLayout'
 import { RoutesPath } from './constants/routes'
+import Demo from './pages/Demo'
 type Props = {}
 
 
@@ -14,6 +15,7 @@ const RoutesManager = (_props: Props) => {
           <Route index={true} element={<LandingPage/>}  />
             <Route path={RoutesPath.LOGIN} element={<Login/>}  />
             <Route path={RoutesPath.SIGNUP} element={<SignUp/>}  />
+            <Route path={RoutesPath.DEMO} element={<Demo/>}/>
         </Route>
     </Routes>
   )

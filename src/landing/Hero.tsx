@@ -7,13 +7,13 @@ type Props = {}
 
 export const Hero = (props: Props) => {
   return (
-    <div className={cn("bg-mb-3 p-4 flex-1 flex flex-col overflow-x-hidden", "lg:flex-row lg:items-center lg:px-12" )}>
+    <div className={cn("bg-mb-3 p-4 px-8 flex flex-col", "lg:flex-row lg:items-center lg:py-8" )}>
         {/* left hand side */}
-        <div className={cn("flex-1 p-8 self-center text-center", "lg:text-left lg:pb-36")}>
+        <div className={cn("flex-1 p-8 px-0 self-center text-center", "lg:text-left lg:pb-36")}>
             <div className="lg:max-w-[600px]">
                 <h1 className={cn("text-4xl font-medium", )}>Mock APIs.</h1>
                 <h1 className="text-4xl font-medium text-mb-2">Real Progress.</h1>
-                <p className={cn("text-sm mt-1", "sm:max-w-1/2 sm:mx-auto", "lg:mx-0")}>
+                <p className={cn("text-muted-foreground text-sm mt-1", "sm:max-w-1/2 sm:mx-auto", "lg:mx-0 lg:max-w-[70%]")}>
                     {heroDesc}
                 </p>
                 <div className="mt-2">
@@ -27,7 +27,7 @@ export const Hero = (props: Props) => {
         {/* right hand side */}
         <div className="flex-1">
             {/* Code preview */}
-            <TiltCard className="container mx-auto lg:px-4">
+            <TiltCard className="container mx-auto">
                 <div className="max-w-4xl mx-auto bg-card/50 backdrop-blur-sm rounded-xl p-4 overflow-hidden border shadow-md">
                     <div className="flex items-center gap-2 mb-2">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>

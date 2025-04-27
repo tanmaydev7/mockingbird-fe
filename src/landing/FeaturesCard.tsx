@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import TiltCard from '@/utility-components/TiltCard'
-import { Braces } from 'lucide-react'
 import React from 'react'
 
 type Props = {

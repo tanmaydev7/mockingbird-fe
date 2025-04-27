@@ -4,7 +4,7 @@ import Linkedin from "@/assets/linkedin.svg?react"
 import { footerList } from "./constants/footerList"
 type Props = {}
 
-export const Footer = (props: Props) => {
+export const Footer = (_props: Props) => {
   return (
     <div className="w-full px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 md:gap-4">

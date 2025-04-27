@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
 type Props = {}
 
-export const TryDemo = (props: Props) => {
+export const TryDemo = (_props: Props) => {
   return (
     <div className='w-full flex flex-col p-8 px-8 bg-mb-3'>
         <div className="w-full flex flex-col items-center text-center">

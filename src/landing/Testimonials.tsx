@@ -5,7 +5,7 @@ import { testimonialsList } from "./constants/testimonialsList"
 
 type Props = {}
 
-export const Testimonials = (props: Props) => {
+export const Testimonials = (_props: Props) => {
   return (
     <div className='w-full flex flex-col p-8 px-8'>
         <div className="w-full flex flex-col items-center text-center">

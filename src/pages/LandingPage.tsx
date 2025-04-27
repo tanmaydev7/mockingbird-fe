@@ -7,7 +7,7 @@ import { TryDemo } from '@/landing/TryDemo'
 
 type Props = {}
 
-const LandingPage = (props: Props) => {
+const LandingPage = (_props: Props) => {
   return (
     <div className='w-full h-full flex flex-col overflow-auto'>
         <Header/>

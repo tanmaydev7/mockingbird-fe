@@ -5,7 +5,7 @@ import TiltCard from "@/utility-components/TiltCard"
 
 type Props = {}
 
-export const Hero = (props: Props) => {
+export const Hero = (_props: Props) => {
   return (
     <div className={cn("bg-mb-3 p-4 px-8 flex flex-col", "lg:flex-row lg:items-center lg:py-8" )}>
         {/* left hand side */}

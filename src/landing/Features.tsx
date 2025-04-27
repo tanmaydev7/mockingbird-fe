@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 type Props = {}
 
-export const Features = (props: Props) => {
+export const Features = (_props: Props) => {
   return (
     <div className='w-full flex flex-col p-8 px-8 bg-mb-4/40'>
         <div className="w-full flex flex-col items-center text-center">

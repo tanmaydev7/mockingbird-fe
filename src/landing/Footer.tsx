@@ -32,7 +32,7 @@ export const Footer = (props: Props) => {
                             <div className="space-y-4 mt-4">
                                 {
                                     footer.links.map(link => (
-                                        <a className="block text-muted-foreground" href={link.link}>
+                                        <a className="block text-muted-foreground" href={link.link} key={link.label}>
                                             {link.label}
                                         </a>
                                     ))

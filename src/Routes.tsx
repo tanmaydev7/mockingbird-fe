@@ -13,10 +13,10 @@ const RoutesManager = (_props: Props) => {
     <Routes>
         <Route path={RoutesPath.LANDING_PAGE} element={<LandingLayout/>}>
           <Route index={true} element={<LandingPage/>}  />
-            <Route path={RoutesPath.LOGIN} element={<Login/>}  />
-            <Route path={RoutesPath.SIGNUP} element={<SignUp/>}  />
             <Route path={RoutesPath.DEMO} element={<Demo/>}/>
         </Route>
+        <Route path={RoutesPath.LOGIN} element={<Login/>}  />
+        <Route path={RoutesPath.SIGNUP} element={<SignUp/>}  />
     </Routes>
   )
 }

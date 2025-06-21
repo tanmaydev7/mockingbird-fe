@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Link } from "react-router"
+import { RoutesPath } from "@/constants/routes"
 import logo from "@/assets/mocking-bird-mini.png"
 
 const Login = () => {
@@ -100,9 +101,9 @@ const Login = () => {
                 />
               </div>
               <div className="flex items-center justify-end">
-                <Link to="/forgot-password" className="text-xs sm:text-sm text-primary hover:text-primary/80 font-medium transition-colors">
-                  Forgot password?
-                </Link>
+                <Link to={RoutesPath.FORGOT_PASSWORD} className="text-xs sm:text-sm text-primary hover:text-primary/80 font-medium transition-colors">
+                    Forgot password?
+                  </Link>
               </div>
               <Button type="submit" className="w-full h-9 sm:h-10 lg:h-11 text-sm sm:text-base font-medium">
                 Sign in
